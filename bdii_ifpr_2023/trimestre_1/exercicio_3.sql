@@ -30,7 +30,7 @@ CREATE TABLE turma (
 CREATE TABLE historico (
 	aluno_id INT NOT NULL REFERENCES alunos (id_aluno),
     disciplina_id INT NOT NULL REFERENCES disciplinas (id_disciplina),
-    professor_id INT NOT NULL REFERENCES professores (id_professor)
+    professor_id INT NOT NULL REFERENCES professores (id_professor),
     frequencia INT NOT NULL,
     nota DECIMAL(2, 2) NOT NULL
 );
